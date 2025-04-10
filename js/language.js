@@ -393,7 +393,9 @@ const translations = {
       
       @media (max-width: 768px) {
         .lang-toggle-container {
-          margin-left: 10px;
+          margin: 0;
+          padding: 10px 0;
+          justify-content: center;
         }
       }
     `;
