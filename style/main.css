@@ -53,7 +53,7 @@ header p {
 
 nav {
     background-color: white;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -223,7 +223,7 @@ h2::after {
     background-color: white;
     position: relative;
     border-radius: 6px;
-    box-shadow: 0 3px 12px rgba(0,0,0,0.1);
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
 }
 
 .timeline-content h3 {
@@ -250,17 +250,18 @@ h2::after {
     margin-top: 30px;
     justify-content: center;
 }
+
 .project-card {
     background-color: white;
     border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .project-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
 }
 
 .project-img {
@@ -362,22 +363,23 @@ footer {
         flex-direction: column;
         gap: 30px;
     }
-    
+
     .timeline::after {
         left: 31px;
     }
-    
+
     .timeline-item {
         width: 100%;
         padding-left: 70px;
         padding-right: 25px;
     }
-    
+
     .timeline-right {
         left: 0;
     }
-    
-    .timeline-left::after, .timeline-right::after {
+
+    .timeline-left::after,
+    .timeline-right::after {
         left: 20px;
     }
 }
@@ -386,20 +388,20 @@ footer {
     header h1 {
         font-size: 2.5rem;
     }
-    
+
     header p {
         font-size: 1.2rem;
     }
-    
+
     .nav-links {
         flex-direction: column;
         text-align: center;
     }
-    
+
     .nav-links li a {
         padding: 12px;
     }
-    
+
     h2 {
         font-size: 2rem;
     }

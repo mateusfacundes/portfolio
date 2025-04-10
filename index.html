@@ -10,6 +10,56 @@
     <link rel="stylesheet" href="./style/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            overflow: auto;
+        }
+    
+        .modal-content {
+            position: relative;
+            background-color: #fff;
+            margin: 5% auto;
+            width: 90%;
+            max-width: 1000px;
+            height: 80vh;
+            border-radius: 8px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+        }
+    
+        .close-btn {
+            position: absolute;
+            top: -15px;
+            right: -15px;
+            color: white;
+            background-color: #ff3a30;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            font-size: 18px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+            border: none;
+        }
+    
+        .modal-iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+            border-radius: 8px;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -138,7 +188,22 @@
     <section id="projects">
         <div class="container">
             <h2>Projetos</h2>
-            <div class="projects-grid">
+            <div class="projects-grid">                
+                <div class="project-card">
+                    <div class="project-info">
+                        <h3>Site institucional Rio Maria</h3>
+                        <p>Site dedicado à divulgação de produtos e novidades da empresa de alimentos Rio Maria.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">JavaScript</span>
+                            <span class="project-tag">PHP</span>
+                            <span class="project-tag">WordPress</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://riomariaalimentos.com/"><i class="fas fa-link"></i> Site</a>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="project-card">
                     <!-- <img src="/api/placeholder/400/200" alt="E-commerce Platform" class="project-img"> -->
                     <div class="project-info">
@@ -154,18 +219,19 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="project-card">
+                    <!-- <img src="/api/placeholder/400/200" alt="E-commerce Platform" class="project-img"> -->
                     <div class="project-info">
-                        <h3>Site institucional Rio Maria</h3>
-                        <p>Site dedicado à divulgação de produtos e novidades da empresa de alimentos Rio Maria.</p>
+                        <h3>Pokedex</h3>
+                        <p>Projeto pessoal desenvolvido para praticar habilidades em front-end e consumo de APIs. Esta Pokédex interativa permite buscar, visualizar e explorar informações dos Pokémon usando a PokéAPI. Uma mistura de diversão com aprendizado.</p>
                         <div class="project-tags">
-                            <span class="project-tag">JavaScript</span>
-                            <span class="project-tag">PHP</span>
-                            <span class="project-tag">WordPress</span>
+                            <span class="project-tag">Kotlin</span>
+                            <span class="project-tag">Spring Boot</span>
                         </div>
                         <div class="project-links">
-                            <a href="https://riomariaalimentos.com/"><i class="fas fa-link"></i> Site</a>
+                            <a href="#" id="demo-link"><i class="fas fa-link"></i> Demo</a>
+                            <a href="https://github.com/mateusfacundes/pokedex"><i class="fab fa-github"></i> GitHub</a>
                         </div>
                     </div>
                 </div>
@@ -231,7 +297,15 @@
             <p>&copy; 2025 Mateus Facundes. Todos os direitos reservados.</p>
         </div>
     </footer>
+
+    <div id="demoModal" class="modal">
+        <div class="modal-content">
+            <button class="close-btn">&times;</button>
+            <iframe class="modal-iframe" src="" id="demoFrame"></iframe>
+        </div>
+    </div>
     
     <script src="js/indes.js"></script>
+    <script src="js/modal.js"></script>
 </body>
 </html>
