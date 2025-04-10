@@ -274,8 +274,8 @@ const translations = {
       <label class="switch">
         <input type="checkbox" id="lang-toggle">
         <span class="slider round">
-          <span class="lang-label pt">PT</span>
-          <span class="lang-label en">EN</span>
+          <span class="lang-label pt">EN</span>
+          <span class="lang-label en">PT</span>
         </span>
       </label>
     `;
